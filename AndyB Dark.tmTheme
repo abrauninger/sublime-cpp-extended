@@ -114,18 +114,6 @@
 
 		<dict>
 			<key>name</key>
-			<string>Comment</string>
-			<key>scope</key>
-			<string>comment</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#6A9955</string>
-			</dict>
-		</dict>
-
-		<dict>
-			<key>name</key>
 			<string>Invalid</string>
 			<key>scope</key>
 			<string>invalid</string>
@@ -206,11 +194,23 @@
 			<key>name</key>
 			<string>Punctuation</string>
 			<key>scope</key>
-			<string>punctuation</string>
+			<string>punctuation - comment</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
 				<string>#9CDCFE80</string>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>Comment</string>
+			<key>scope</key>
+			<string>comment</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#6A9955</string>
 			</dict>
 		</dict>
 
