@@ -249,7 +249,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#A21414</string>
+				<string>#569CD6</string>
 			</dict>
 		</dict>
 
@@ -383,6 +383,8 @@
 				<string>#000000</string>
 			</dict>
 		</dict>
+
+		<!--
 		<dict>
 			<key>name</key>
 			<string>XML Declaration</string>
@@ -394,6 +396,7 @@
 				<string>#333333</string>
 			</dict>
 		</dict>
+		-->
 
 		<!-- XML attribute names -->
 		<dict>
@@ -404,7 +407,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#0078CE</string>
+				<string>#9CDCFE</string>
 			</dict>
 		</dict>
 
@@ -426,7 +429,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#FFFFFF</string>
+				<string>#D4D4D4</string>
 			</dict>
 		</dict>
 
@@ -437,7 +440,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#0078CE</string>
+				<string>#808080</string>
 			</dict>
 		</dict>
 
@@ -453,6 +456,7 @@
 		</dict>
 
 		<!-- XML attribute values -->
+		<!--
 		<dict>
 			<key>scope</key>
 			<string>meta.tag string.quoted</string>
@@ -462,7 +466,7 @@
 				<string>#000000</string>
 			</dict>
 		</dict>
-
+		-->
 		<!-- Quotation marks around XML attribute values -->
 		<dict>
 			<key>scope</key>
@@ -471,6 +475,16 @@
 			<dict>
 				<key>foreground</key>
 				<string>#808080</string>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>scope</key>
+			<string>meta.tag.sgml.doctype.xml</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#CE9178</string>
 			</dict>
 		</dict>
 	</array>
