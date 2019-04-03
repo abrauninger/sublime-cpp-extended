@@ -252,6 +252,18 @@
 
 		<dict>
 			<key>name</key>
+			<string>Namespace qualifier for a type name in a function parameter list</string>
+			<key>scope</key>
+			<string>meta.method.parameters - variable.parameter</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#9CDCFE80</string>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>name</key>
 			<string>Template parameter</string>
 			<key>scope</key>
 			<string>(meta.template identifier)</string>
