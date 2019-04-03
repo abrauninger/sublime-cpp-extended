@@ -1,7 +1,7 @@
 %YAML 1.2
 ---
 # http://www.sublimetext.com/docs/3/syntax.html
-name: C++
+name: C++ prime
 comment: I don't think anyone uses .hp. .cp tends to be paired with .h. (I could be wrong. :) -- chris
 file_extensions:
   - cpp
