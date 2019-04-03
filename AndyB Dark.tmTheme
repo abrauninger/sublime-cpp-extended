@@ -276,6 +276,18 @@
 
 		<dict>
 			<key>name</key>
+			<string>Return type</string>
+			<key>scope</key>
+			<string>type.return-type</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#4EC9B0</string>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>name</key>
 			<string>Plain text</string>
 			<key>scope</key>
 			<string>text.plain</string>

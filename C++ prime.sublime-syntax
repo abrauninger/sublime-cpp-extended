@@ -1241,6 +1241,15 @@ contexts:
     - match: '(?=\S)'
       set: data-structures-type
 
+  function-leading-return-type:
+    - match: '{{identifier}}\s*(::)\s*'
+      captures:
+        1: punctuation.accessor.c++
+    - match: '(?:(::)\s*)?({{identifier}})'
+      captures:
+        1: punctuation.accessor.c++
+        2: type.return-type.c++
+
   data-structures-type:
     - include: comments
     - match: \*|&
@@ -1285,7 +1294,8 @@ contexts:
     - include: types
     - include: variables
     - include: constants
-    - include: identifiers
+    #- include: identifiers
+    - include: function-leading-return-type
     - match: (?=[&*])
       set: data-structures-maybe-method
     - match: (?=\W)
@@ -1338,7 +1348,7 @@ contexts:
       pop: true
 
   data-structures-function-identifier:
-    - meta_content_scope: entity.name.function.c++
+    - meta_content_scope: entity.name.function-2.c++
     - include: identifiers
     - match: '(?=\S)'
       pop: true
