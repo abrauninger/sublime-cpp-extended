@@ -182,7 +182,7 @@
 			<key>name</key>
 			<string>Struct name</string>
 			<key>scope</key>
-			<string>entity.name.struct</string>
+			<string>(entity.name.struct | entity.name.class)</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
