@@ -224,6 +224,7 @@ contexts:
     - include: comments
     - include: case-default
     - include: typedef
+    - include: using-typedef
     - include: keywords-angle-brackets
     - include: keywords-parens
     - include: keywords
@@ -696,6 +697,15 @@ contexts:
           captures:
             1: storage.type.c++
         - include: expressions-minus-generic-type
+
+  using-typedef:
+    - match: \busing\b
+      scope: keyword.control.c++
+      push:
+        - match: ({{identifier}})?\s*=
+          captures:
+            1: entity.name.type.typedef.using.c++
+          pop: true
 
   parens:
     - match: \(
