@@ -178,20 +178,6 @@
 
 		<!-- Customizing C++ stuff -->
 
-		<!--
-		<dict>
-			<key>name</key>
-			<string>Function call namespace qualifier</string>
-			<key>scope</key>
-			<string>(meta.group | variable.function) - (meta.group & variable.function)</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#9CDCFE80</string>
-			</dict>
-		</dict>
-		-->
-
 		<dict>
 			<key>name</key>
 			<string>Function call</string>
@@ -249,6 +235,18 @@
 			<dict>
 				<key>foreground</key>
 				<string>#569CD680</string>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>Function call namespace qualifier</string>
+			<key>scope</key>
+			<string>variable.function.qualifier</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#9CDCFE80</string>
 			</dict>
 		</dict>
 	
