@@ -204,7 +204,7 @@ contexts:
           set: global-modifier
     - match: '^\s*(?=\w+)'
       push: global-modifier
-    - include: late-expressions
+    - include: late-expressions-with-type
 
   statements:
     - include: preprocessor-statements
@@ -213,7 +213,7 @@ contexts:
 
   expressions:
     - include: early-expressions
-    - include: late-expressions
+    - include: late-expressions-no-type
 
   early-expressions:
     - include: early-expressions-before-generic-type
@@ -254,18 +254,26 @@ contexts:
     - include: early-expressions-before-generic-type
     - include: angle-brackets
     - include: early-expressions-after-generic-type
-    - include: late-expressions
+    - include: late-expressions-with-type
 
   expressions-minus-generic-type-function-call:
     - include: early-expressions-before-generic-type
     - include: angle-brackets
     - include: early-expressions-after-generic-type
     - include: late-expressions-before-function-call
-    - include: identifiers
+    #- include: identifiers
+    - include: type-reference
     - match: ';'
       scope: punctuation.terminator.c++
 
-  late-expressions:
+  late-expressions-with-type:
+    - include: late-expressions-before-function-call
+    - include: function-call
+    - include: type-reference
+    - match: ';'
+      scope: punctuation.terminator.c++
+
+  late-expressions-no-type:
     - include: late-expressions-before-function-call
     - include: function-call
     - include: identifiers
@@ -505,7 +513,7 @@ contexts:
         - match: '(?:(::)\s*)?({{identifier}})\s*(::)\s*'
           captures:
             1: punctuation.accessor.double-colon.c++
-            2: variable.function.qualifier.c++
+            2: variable.function.namespace-qualifier.c++
             3: punctuation.accessor.double-colon.c++
         - match: (?:(::)\s*)?({{identifier}})\s*(<)
           captures:
@@ -577,7 +585,7 @@ contexts:
         - meta_scope: meta.function-call.c++
         - include: scope:source.c#c99
         - match: '(?:(::)\s*)?{{identifier}}\s*(::)\s*'
-          scope: variable.function.qualifier.c++
+          scope: variable.function.namespace-qualifier.c++
           captures:
             1: punctuation.accessor.c++
             2: punctuation.accessor.c++
@@ -1151,7 +1159,8 @@ contexts:
         - match: (?={{path_lookahead}})
           push:
             - meta_scope: entity.other.inherited-class.c++
-            - include: identifiers
+            #- include: identifiers
+            - include: type-reference
             - match: ''
               pop: true
         - include: angle-brackets
@@ -1172,7 +1181,7 @@ contexts:
     - include: typedef
     - match: \b({{visibility_modifiers}})\s*(:)(?!:)
       captures:
-        1: storage.modifier.c++
+        1: storage.modifier-1.c++
         2: punctuation.section.class.c++
     - match: '^\s*(?=(?:~?\w+|::))'
       push: data-structures-modifier
@@ -1241,15 +1250,15 @@ contexts:
     - match: '(?=\S)'
       set: data-structures-type
 
-  function-leading-return-type:
+  type-reference:
     - match: '({{identifier}})\s*(::)\s*'
       captures:
-        1: function.return-type.namespace-qualifier
+        1: entity.name.type.namespace-qualifier.c++
         2: punctuation.accessor.c++
     - match: '(?:(::)\s*)?({{identifier}})'
       captures:
         1: punctuation.accessor.c++
-        2: type.return-type.c++
+        2: entity.name.type.type-reference.c++
 
   data-structures-type:
     - include: comments
@@ -1296,7 +1305,7 @@ contexts:
     - include: variables
     - include: constants
     #- include: identifiers
-    - include: function-leading-return-type
+    - include: type-reference
     - match: (?=[&*])
       set: data-structures-maybe-method
     - match: (?=\W)
@@ -1349,7 +1358,7 @@ contexts:
       pop: true
 
   data-structures-function-identifier:
-    - meta_content_scope: entity.name.function-2.c++
+    - meta_content_scope: entity.name.function.c++
     - include: identifiers
     - match: '(?=\S)'
       pop: true

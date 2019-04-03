@@ -230,7 +230,7 @@
 			<key>name</key>
 			<string>Function call namespace qualifier</string>
 			<key>scope</key>
-			<string>(variable.function.qualifier | function.return-type.namespace-qualifier)</string>
+			<string>(variable.function.namespace-qualifier | entity.name.type.namespace-qualifier)</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -242,7 +242,7 @@
 			<key>name</key>
 			<string>Type name within a function parameter list</string>
 			<key>scope</key>
-			<string>(meta.function.parameters identifier) | (meta.method.parameters identifier)</string>
+			<string>entity.name.type.type-reference</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -266,11 +266,13 @@
 			<key>name</key>
 			<string>Template parameter</string>
 			<key>scope</key>
-			<string>(meta.template identifier)</string>
+			<string>(meta.template entity.name.type.type-reference)</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
 				<string>italic</string>
+				<key>foreground</key>
+				<string>#FFFFFF</string>
 			</dict>
 		</dict>
 
