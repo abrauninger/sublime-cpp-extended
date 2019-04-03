@@ -249,6 +249,18 @@
 				<string>#9CDCFE80</string>
 			</dict>
 		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>Type name within a function parameter list</string>
+			<key>scope</key>
+			<string>(meta.function.parameters identifier) | (meta.method.parameters identifier)</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FF0000</string>
+			</dict>
+		</dict>
 	
 		<!-- XML tag name -->
 		<dict>

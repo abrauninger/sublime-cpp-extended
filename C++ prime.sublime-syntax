@@ -149,9 +149,10 @@ contexts:
     - match: '{{identifier}}\s*(::)\s*'
       captures:
         1: punctuation.accessor.c++
-    - match: '(?:(::)\s*)?{{identifier}}'
+    - match: '(?:(::)\s*)?({{identifier}})'
       captures:
         1: punctuation.accessor.c++
+        2: identifier.c++
 
   function-specifiers:
     - match: \b(const|final|noexcept|override)\b
@@ -207,7 +208,7 @@ contexts:
 
   statements:
     - include: preprocessor-statements
-    - include: scope:source.c#label
+    - include: scope:source.c-prime#label
     - include: expressions
 
   expressions:
