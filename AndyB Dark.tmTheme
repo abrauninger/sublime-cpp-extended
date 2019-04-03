@@ -33,7 +33,6 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<!--<string>#A21414</string> Maroon -->
 				<string>#CE9178</string>
 			</dict>
 		</dict>
@@ -240,25 +239,13 @@
 
 		<dict>
 			<key>name</key>
-			<string>Type name within a function parameter list</string>
+			<string>Type name</string>
 			<key>scope</key>
 			<string>entity.name.type.type-reference</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
 				<string>#4EC9B0</string>
-			</dict>
-		</dict>
-
-		<dict>
-			<key>name</key>
-			<string>Namespace qualifier for a type name in a function parameter list</string>
-			<key>scope</key>
-			<string>meta.method.parameters - variable.parameter</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#9CDCFE80</string>
 			</dict>
 		</dict>
 
