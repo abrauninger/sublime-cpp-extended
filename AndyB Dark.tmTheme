@@ -14,7 +14,7 @@
 				<key>background</key>
 				<string>#1E1E1E</string>
 				<key>caret</key>
-				<string>#FFFFFF</string>
+				<string>#A0A0A0</string>
 				<key>foreground</key>
 				<string>#9CDCFE</string>
 				<key>invisibles</key>
@@ -259,6 +259,18 @@
 			<dict>
 				<key>fontStyle</key>
 				<string>italic</string>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>Plain text</string>
+			<key>scope</key>
+			<string>text.plain</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#D0D0D0</string>
 			</dict>
 		</dict>
 	
