@@ -501,10 +501,11 @@ contexts:
         - meta_scope: meta.function-call.c++
         - match: \btemplate\b
           scope: storage.type.template.c++
-        - match: '(?:(::)\s*)?{{identifier}}\s*(::)\s*'
+        - match: '(?:(::)\s*)?({{identifier}})\s*(::)\s*'
           captures:
             1: punctuation.accessor.double-colon.c++
-            2: punctuation.accessor.double-colon.c++
+            2: variable.function.qualifier.c++
+            3: punctuation.accessor.double-colon.c++
         - match: (?:(::)\s*)?({{identifier}})\s*(<)
           captures:
             1: punctuation.accessor.double-colon.c++
@@ -575,7 +576,7 @@ contexts:
         - meta_scope: meta.function-call.c++
         - include: scope:source.c#c99
         - match: '(?:(::)\s*)?{{identifier}}\s*(::)\s*'
-          scope: variable.function.c++
+          scope: variable.function.qualifier.c++
           captures:
             1: punctuation.accessor.c++
             2: punctuation.accessor.c++
