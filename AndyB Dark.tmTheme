@@ -261,6 +261,18 @@
 				<string>#4EC9B0</string>
 			</dict>
 		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>Template parameter</string>
+			<key>scope</key>
+			<string>(meta.template identifier)</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+			</dict>
+		</dict>
 	
 		<!-- XML tag name -->
 		<dict>
