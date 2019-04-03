@@ -178,21 +178,23 @@
 
 		<!-- Customizing C++ stuff -->
 
+		<!--
 		<dict>
 			<key>name</key>
 			<string>Function call namespace qualifier</string>
 			<key>scope</key>
-			<string>meta.function-call - meta.group</string>
+			<string>(meta.group | variable.function) - (meta.group & variable.function)</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
 				<string>#9CDCFE80</string>
 			</dict>
 		</dict>
+		-->
 
 		<dict>
 			<key>name</key>
-			<string>Function call namespace qualifier</string>
+			<string>Function call</string>
 			<key>scope</key>
 			<string>variable.function</string>
 			<key>settings</key>
@@ -207,6 +209,18 @@
 			<string>Struct name</string>
 			<key>scope</key>
 			<string>entity.name.struct</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FFFFFF</string>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>Typedef name</string>
+			<key>scope</key>
+			<string>entity.name.type.typedef</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
