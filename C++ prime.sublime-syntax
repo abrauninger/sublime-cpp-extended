@@ -1242,9 +1242,10 @@ contexts:
       set: data-structures-type
 
   function-leading-return-type:
-    - match: '{{identifier}}\s*(::)\s*'
+    - match: '({{identifier}})\s*(::)\s*'
       captures:
-        1: punctuation.accessor.c++
+        1: function.return-type.namespace-qualifier
+        2: punctuation.accessor.c++
     - match: '(?:(::)\s*)?({{identifier}})'
       captures:
         1: punctuation.accessor.c++

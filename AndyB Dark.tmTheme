@@ -230,7 +230,7 @@
 			<key>name</key>
 			<string>Function call namespace qualifier</string>
 			<key>scope</key>
-			<string>variable.function.qualifier</string>
+			<string>(variable.function.qualifier | function.return-type.namespace-qualifier)</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
