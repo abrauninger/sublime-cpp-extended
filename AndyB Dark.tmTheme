@@ -227,9 +227,9 @@
 
 		<dict>
 			<key>name</key>
-			<string>Function call namespace qualifier</string>
+			<string>Namespace names</string>
 			<key>scope</key>
-			<string>(variable.function.namespace-qualifier | entity.name.type.namespace-qualifier)</string>
+			<string>(entity.name.namespace | entity.name.type.namespace-qualifier | variable.function.namespace-qualifier)</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
