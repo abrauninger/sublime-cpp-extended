@@ -29,7 +29,7 @@
 			<key>name</key>
 			<string>String</string>
 			<key>scope</key>
-			<string>string</string>
+			<string>string | constant.numeric</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -44,8 +44,12 @@
 			<string>constant.numeric</string>
 			<key>settings</key>
 			<dict>
+				<!--
 				<key>foreground</key>
-				<string>#B5CEA8</string>
+				<string>#B5CEA8</string> # Kind of a lime green 
+				-->
+				<key>fontStyle</key>
+				<string>bold</string>
 			</dict>
 		</dict>
 	
