@@ -854,7 +854,8 @@ contexts:
           pop: true
     - include: variables
     - include: constants
-    - include: identifiers
+    #- include: identifiers
+    - include: type-reference
     - match: (?=\W)
       pop: true
 
