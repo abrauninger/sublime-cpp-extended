@@ -217,7 +217,7 @@
 			<key>name</key>
 			<string>Storage type</string>
 			<key>scope</key>
-			<string>storage.type.template</string>
+			<string>(storage.type.template) | (meta.template keyword.type)</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
