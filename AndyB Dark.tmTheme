@@ -64,7 +64,7 @@
 			<key>name</key>
 			<string>Keyword</string>
 			<key>scope</key>
-			<string>keyword</string>
+			<string>keyword | storage.modifier</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -241,7 +241,7 @@
 			<key>name</key>
 			<string>Type name</string>
 			<key>scope</key>
-			<string>entity.name.type.type-reference</string>
+			<string>storage.type | entity.name.type.type-reference</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -369,6 +369,8 @@
 			</dict>
 		</dict>
 	-->
+
+		<!--
 		<dict>
 			<key>name</key>
 			<string>Storage</string>
@@ -377,21 +379,10 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#C586C0</string>
+				<string>#C586C0</string>  # Fuschia
 			</dict>
 		</dict>
-
-		<dict>
-			<key>name</key>
-			<string>Storage type</string>
-			<key>scope</key>
-			<string>storage.type</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#4EC9B0</string>
-			</dict>
-		</dict>
+	-->
 
 		<dict>
 			<key>name</key>
