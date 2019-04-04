@@ -64,7 +64,7 @@ contexts:
     # This is highlighted after all of the other control keywords
     # to allow operator overloading to be lexed properly
     - match: \boperator\b
-      scope: keyword.control.c++
+      scope: keyword.type.c++
 
   unique-modifiers:
     - match: \b({{modifiers}})\b
@@ -438,8 +438,8 @@ contexts:
   namespace:
     - match: '\b(using)\s+(namespace)\s+(?={{path_lookahead}})'
       captures:
-        1: keyword.control.c++
-        2: keyword.control.c++
+        1: keyword.type.c++
+        2: keyword.type.c++
       push:
         - include: identifiers
         - match: ''
@@ -447,7 +447,7 @@ contexts:
     - match: '\b(namespace)\s+(?=({{path_lookahead}})?(?!\s*[;,]))'
       scope: meta.namespace.c++
       captures:
-        1: keyword.control.c++
+        1: keyword.type.c++
       push:
         - meta_content_scope: meta.namespace.c++ entity.name.namespace.c++
         - include: identifiers
@@ -714,7 +714,7 @@ contexts:
 
   using-typedef:
     - match: \busing\b
-      scope: keyword.control.c++
+      scope: keyword.type.c++
       push:
         - match: ({{identifier}})?\s*=
           captures:
@@ -1272,7 +1272,7 @@ contexts:
       # Cast methods
     - match: '(operator)\s+({{identifier}})(?=\s*(\(|$))'
       captures:
-        1: keyword.control.c++
+        1: keyword.type.c++
         2: meta.method.c++ entity.name.function.c++
       set: method-definition-params
     - match: '(?=\b({{control_keywords}}|{{operator_keywords}}|{{casts}}|{{memory_operators}}|{{other_keywords}}|operator)\b)'

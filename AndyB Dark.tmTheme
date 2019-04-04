@@ -60,6 +60,7 @@
 				<string>#FF0080</string>
 			</dict>
 		</dict>
+
 		<dict>
 			<key>name</key>
 			<string>Keyword</string>
@@ -69,6 +70,18 @@
 			<dict>
 				<key>foreground</key>
 				<string>#569CD6</string>
+			</dict>
+		</dict>
+		
+		<dict>
+			<key>name</key>
+			<string>Keyword</string>
+			<key>scope</key>
+			<string>keyword.control - keyword.control.import</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#C586C0</string> <!-- Fuschia -->
 			</dict>
 		</dict>
 
