@@ -184,21 +184,9 @@
 
 		<dict>
 			<key>name</key>
-			<string>Struct name</string>
+			<string>Type name (at definition site)</string>
 			<key>scope</key>
-			<string>(entity.name.struct | entity.name.class)</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#FFFFFF</string>
-			</dict>
-		</dict>
-
-		<dict>
-			<key>name</key>
-			<string>Typedef name</string>
-			<key>scope</key>
-			<string>entity.name.type.typedef</string>
+			<string>entity.name.struct | entity.name.class | entity.name.type.typedef</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -328,76 +316,6 @@
 				<string>#569CD6</string>
 			</dict>
 		</dict>
-		
-		<!--
-		<dict>
-			<key>name</key>
-			<string>Built-in constant</string>
-			<key>scope</key>
-			<string>constant.language</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#AE81FF</string>
-			</dict>
-		</dict>
-	
-		<dict>
-			<key>name</key>
-			<string>User-defined constant</string>
-			<key>scope</key>
-			<string>constant.character, constant.other</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#AE81FF</string>
-			</dict>
-		</dict>
--->
-
-<!--
-		<dict>
-			<key>name</key>
-			<string>Support</string>
-			<key>scope</key>
-			<string>support</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string>bold</string>
-				<key>foreground</key>
-				<string>#3333FF</string>
-			</dict>
-		</dict>
--->
-
-<!--
-		<dict>
-			<key>name</key>
-			<string>Storage</string>
-			<key>scope</key>
-			<string>storage</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string>bold</string>
-			</dict>
-		</dict>
-	-->
-
-		<!--
-		<dict>
-			<key>name</key>
-			<string>Storage</string>
-			<key>scope</key>
-			<string>storage</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#C586C0</string>  # Fuschia
-			</dict>
-		</dict>
-	-->
 
 		<dict>
 			<key>name</key>
