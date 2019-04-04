@@ -1181,7 +1181,7 @@ contexts:
     - include: typedef
     - match: \b({{visibility_modifiers}})\s*(:)(?!:)
       captures:
-        1: storage.modifier-1.c++
+        1: storage.modifier.c++
         2: punctuation.section.class.c++
     - match: '^\s*(?=(?:~?\w+|::))'
       push: data-structures-modifier
