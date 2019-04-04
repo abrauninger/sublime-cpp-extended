@@ -215,6 +215,10 @@ contexts:
     - include: early-expressions
     - include: late-expressions-no-type
 
+  template-expressions:
+    - include: early-expressions
+    - include: late-expressions-with-type
+
   early-expressions:
     - include: early-expressions-before-generic-type
     - include: generic-type
@@ -474,7 +478,7 @@ contexts:
     # prevents re-highlighting the whole file until the next > is found.
     - match: (?=[{};])
       pop: true
-    - include: expressions
+    - include: template-expressions
 
   template:
     - match: \btemplate\b
