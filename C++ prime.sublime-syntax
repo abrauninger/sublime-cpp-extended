@@ -396,7 +396,7 @@ contexts:
   types-parens:
     - match: '\b(decltype)\b\s*(\()'
       captures:
-        1: storage.type.c++
+        1: keyword.type.c++
         2: meta.group.c++ punctuation.section.group.begin.c++
       push:
         - meta_content_scope: meta.group.c++
@@ -494,14 +494,14 @@ contexts:
             - match: \.{3}
               scope: keyword.operator.variadic.c++
             - match: \b(typename|{{before_tag}})\b
-              scope: storage.type.c++
+              scope: keyword.type.c++
             - include: template # include template here for nested templates
             - include: template-common
         - match: (?=\S)
           set:
             - meta_content_scope: meta.template.c++
             - match: \b({{before_tag}})\b
-              scope: storage.type.c++
+              scope: keyword.type.c++
             - include: template-common
 
   generic-type:
@@ -697,7 +697,7 @@ contexts:
 
   typedef:
     - match: \btypedef\b
-      scope: storage.type.c++
+      scope: keyword.type.c++
       push:
         - match: ({{identifier}})?\s*(?=;)
           captures:
@@ -816,7 +816,7 @@ contexts:
           )
         )
       captures:
-        1: storage.type.c++
+        1: keyword.type.c++
       set:
         - include: identifiers
         - match: ''
@@ -997,19 +997,19 @@ contexts:
 
   data-structures:
     - match: '\bclass\b'
-      scope: storage.type.c++
+      scope: keyword.type.c++
       set: data-structures-class-definition
     # Detect variable type definitions using struct/enum/union followed by a tag
     - match: '\b({{before_tag}})(?=\s+{{path_lookahead}}\s+{{path_lookahead}}\s*[=;\[])'
-      scope: storage.type.c++
+      scope: keyword.type.c++
     - match: '\bstruct\b'
-      scope: storage.type.c++
+      scope: keyword.type.c++
       set: data-structures-struct-definition
     - match: '\benum(\s+(class|struct))?\b'
-      scope: storage.type.c++
+      scope: keyword.type.c++
       set: data-structures-enum-definition
     - match: '\bunion\b'
-      scope: storage.type.c++
+      scope: keywrd.type.c++
       set: data-structures-union-definition
     - match: '(?=\S)'
       pop: true
@@ -1202,7 +1202,7 @@ contexts:
               pop: true
             - include: statements
         - match: '\b({{before_tag}})\b'
-          scope: storage.type.c++
+          scope: keyword.type.c++
         - include: expressions-minus-function-call
     - include: comments
     - include: modifiers-parens
@@ -1287,7 +1287,7 @@ contexts:
           )
         )
       captures:
-        1: storage.type.c++
+        1: keyword.type.c++
       set:
         - include: identifiers
         - match: ''
