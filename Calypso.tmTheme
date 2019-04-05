@@ -220,7 +220,7 @@
 
 		<dict>
 			<key>name</key>
-			<string>Storage type</string>
+			<string>'template' keyword (and 'class' inside template declarations)</string>
 			<key>scope</key>
 			<string>(storage.type.template) | (meta.template keyword.type)</string>
 			<key>settings</key>
