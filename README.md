@@ -4,11 +4,13 @@ Improved C++ syntax highlighting in Sublime Text, with two color schemes include
 ## C++ Extended
 `C++ Extended.sublime-syntax` extends the `C++.sublime-syntax` that is included in Sublime Text 3.  `C++ Extended` includes many small improvements that enable more useful syntax highlighting.
 
-## Calypso
-A dark color scheme that takes full advantage of the `C++ Extended` syntax.
+Also included are two color schemes that take full advantage of the `C++ Extended` syntax:
 
-## VS Light
-A light color scheme designed to match Visual Studio's classic color scheme.
+## Calypso
+A dark color scheme.
+
+## Telluride
+A light color scheme.
 
 ## Install
 
@@ -17,4 +19,4 @@ Copy the following files into `%appdata%\Sublime Text 3\packages\user`:
 
 - `C++ Extended.sublime-syntax`
 - `Calypso.tmTheme`
-- `VS Light.tmTheme`
+- `Telluride.tmTheme`
