@@ -106,15 +106,25 @@
 			<key>name</key>
 			<string>Function name</string>
 			<key>scope</key>
+			<string>entity.name.function | variable.function</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#000000</string>
+			</dict>
+		</dict>
+
+		<!--<dict>
+			<key>name</key>
+			<string>Function name</string>
+			<key>scope</key>
 			<string>entity.name.function</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
 				<string>bold</string>
-				<key>foreground</key>
-				<string>#795E26</string>
 			</dict>
-		</dict>
+		</dict>-->
 
 		<dict>
 			<key>name</key>
@@ -168,20 +178,6 @@
 			</dict>
 		</dict>
 
-		<!-- Customizing C++ stuff -->
-
-		<dict>
-			<key>name</key>
-			<string>Function call</string>
-			<key>scope</key>
-			<string>variable.function</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#795E26</string>
-			</dict>
-		</dict>
-
 		<dict>
 			<key>name</key>
 			<string>Type name (at definition site)</string>
@@ -204,7 +200,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#000000</string>
+				<string>#00000060</string>
 			</dict>
 		</dict>
 
@@ -240,7 +236,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#00000040</string>
+				<string>#00000060</string>
 			</dict>
 		</dict>
 
