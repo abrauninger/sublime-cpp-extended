@@ -104,21 +104,9 @@
 
 		<dict>
 			<key>name</key>
-			<string>Function name (declaration/definition)</string>
+			<string>Function name</string>
 			<key>scope</key>
 			<string>entity.name.function | variable.function</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#A01000</string>
-			</dict>
-		</dict>
-
-		<dict>
-			<key>name</key>
-			<string>Function name (call site)</string>
-			<key>scope</key>
-			<string>variable.function</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -226,7 +214,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#4B874A</string>
+				<string>#B0B0B0</string>
 			</dict>
 		</dict>
 
@@ -312,18 +300,6 @@
 			<dict>
 				<key>fontStyle</key>
 				<string></string>
-				<key>foreground</key>
-				<string>#569CD6</string>
-			</dict>
-		</dict>
-
-		<dict>
-			<key>name</key>
-			<string>Built-in constant</string>
-			<key>scope</key>
-			<string>constant.language</string>
-			<key>settings</key>
-			<dict>
 				<key>foreground</key>
 				<string>#569CD6</string>
 			</dict>
