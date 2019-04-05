@@ -104,21 +104,9 @@
 
 		<dict>
 			<key>name</key>
-			<string>Function name (declaration/definition)</string>
+			<string>Function name</string>
 			<key>scope</key>
 			<string>entity.name.function | variable.function</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#A01000</string>
-			</dict>
-		</dict>
-
-		<dict>
-			<key>name</key>
-			<string>Function name (call site)</string>
-			<key>scope</key>
-			<string>variable.function</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
