@@ -186,7 +186,7 @@
 			<key>name</key>
 			<string>Type name (at definition site)</string>
 			<key>scope</key>
-			<string>entity.name.struct | entity.name.class | entity.name.type.typedef</string>
+			<string>entity.name.struct | entity.name.class | entity.name.enum | entity.name.type.typedef</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
