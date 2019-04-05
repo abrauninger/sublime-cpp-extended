@@ -154,6 +154,27 @@ contexts:
         1: punctuation.accessor.c++
         2: identifier.c++
 
+  # Derivatives of the 'identifiers' rules that extract more useful information
+  function-definition-name:
+    - match: '({{identifier}})\s*(::)\s*'
+      captures:
+        1: entity.name.function.class-qualifier.c++
+        2: punctuation.accessor.c++
+    - match: '(?:(::)\s*)?({{identifier}})'
+      captures:
+        1: punctuation.accessor.c++
+        2: entity.name.function.c++
+
+  type-reference:
+    - match: '({{identifier}})\s*(::)\s*'
+      captures:
+        1: entity.name.type.namespace-qualifier.c++
+        2: punctuation.accessor.c++
+    - match: '(?:(::)\s*)?({{identifier}})'
+      captures:
+        1: punctuation.accessor.c++
+        2: entity.name.type.type-reference.c++
+
   function-specifiers:
     - match: \b(const|final|noexcept|override)\b
       scope: storage.modifier.c++
@@ -920,7 +941,8 @@ contexts:
 
   global-function-identifier:
     - meta_content_scope: entity.name.function.c++
-    - include: identifiers
+    #- include: identifiers
+    - include: function-definition-name
     - match: '(?=\S)'
       pop: true
 
@@ -1254,16 +1276,6 @@ contexts:
       push: method-definition-params
     - match: '(?=\S)'
       set: data-structures-type
-
-  type-reference:
-    - match: '({{identifier}})\s*(::)\s*'
-      captures:
-        1: entity.name.type.namespace-qualifier.c++
-        2: punctuation.accessor.c++
-    - match: '(?:(::)\s*)?({{identifier}})'
-      captures:
-        1: punctuation.accessor.c++
-        2: entity.name.type.type-reference.c++
 
   data-structures-type:
     - include: comments
