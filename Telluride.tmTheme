@@ -299,7 +299,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#569CD6</string>
+				<string>#0A8699</string>
 			</dict>
 		</dict>
 
@@ -352,7 +352,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#9CDCFE</string>
+				<string>#A01000</string>
 			</dict>
 		</dict>
 
