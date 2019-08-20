@@ -70,7 +70,7 @@
 			<key>name</key>
 			<string>Keyword</string>
 			<key>scope</key>
-			<string>keyword | storage.modifier</string>
+			<string>(keyword | storage.modifier) - keyword.other.unit</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -352,7 +352,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#9CDCFE</string>
+				<string>#A01000</string>
 			</dict>
 		</dict>
 
@@ -401,17 +401,17 @@
 		</dict>
 
 		<!-- XML attribute values -->
-		<!--
+		
 		<dict>
 			<key>scope</key>
 			<string>meta.tag string.quoted</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#000000</string>
+				<string>#4F8AE2</string>
 			</dict>
 		</dict>
-		-->
+		
 		<!-- Quotation marks around XML attribute values -->
 		<dict>
 			<key>scope</key>
