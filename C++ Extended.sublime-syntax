@@ -604,20 +604,23 @@ contexts:
           pop: true
         - include: statements
 
+  function-reference:
+    - match: '(?:(::)\s*)?{{identifier}}\s*(::)\s*'
+      scope: variable.function.namespace-qualifier.c++
+      captures:
+        1: punctuation.accessor.c++
+        2: punctuation.accessor.c++
+    - match: '(?:(::)\s*)?{{identifier}}'
+      scope: variable.function.c++
+      captures:
+        1: punctuation.accessor.c++
+
   function-call:
     - match: (?={{path_lookahead}}\s*\()
       push:
         - meta_scope: meta.function-call.c++
         - include: scope:source.c#c99
-        - match: '(?:(::)\s*)?{{identifier}}\s*(::)\s*'
-          scope: variable.function.namespace-qualifier.c++
-          captures:
-            1: punctuation.accessor.c++
-            2: punctuation.accessor.c++
-        - match: '(?:(::)\s*)?{{identifier}}'
-          scope: variable.function.c++
-          captures:
-            1: punctuation.accessor.c++
+        - include: function-reference
         - match: '\('
           scope: meta.group.c++ punctuation.section.group.begin.c++
           set:
@@ -740,6 +743,10 @@ contexts:
         - match: ({{identifier}})?\s*=
           captures:
             1: entity.name.type.typedef.using.c++
+          pop: true
+        - include: function-reference
+        - match: ';'
+          scope: punctuation.terminator.c++
           pop: true
 
   parens:
