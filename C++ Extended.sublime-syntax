@@ -178,12 +178,12 @@ contexts:
   qualified-type-reference:
     - match: '({{identifier}})(::)'
       captures:
-        1: entity.name.type.namespace-qualifier.c++asdlfjk
+        1: entity.name.type.namespace-qualifier.c++
         2: punctuation.accessor.c++
     - match: '(?:(::))({{identifier}})'
       captures:
         1: punctuation.accessor.c++
-        2: entity.name.type.type-reference.c++asdflasdkjfasdlfjk
+        2: entity.name.type.type-reference.c++
 
   function-specifiers:
     - match: \b(const|final|noexcept|override)\b
