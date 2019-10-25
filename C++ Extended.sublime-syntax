@@ -304,7 +304,7 @@ contexts:
   late-expressions-with-type:
     - include: late-expressions-before-function-call
     - include: function-call
-    - include: type-reference
+    #- include: type-reference
     - match: ';'
       scope: punctuation.terminator.c++
 
@@ -1230,7 +1230,7 @@ contexts:
         2: punctuation.section.class.c++
     - match: '^\s*(?=(?:~?\w+|::))'
       push: data-structures-modifier
-    #- include: expressions-minus-generic-type
+    - include: expressions-minus-generic-type
 
   data-structures-modifier:
     - match: '\bfriend\b'
