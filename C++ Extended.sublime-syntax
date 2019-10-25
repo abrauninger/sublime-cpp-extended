@@ -235,7 +235,7 @@ contexts:
           set: global-modifier
     - match: '^\s*(?=\w+)'
       push: global-modifier
-    - include: late-expressions-with-type
+    #- include: late-expressions-with-type
 
   statements:
     - include: preprocessor-statements
