@@ -166,14 +166,24 @@ contexts:
         2: entity.name.function.c++
 
   type-reference:
-    - match: '({{identifier}})\s*(::)\s*'
+    - match: '({{identifier}})(::)'
       captures:
         1: entity.name.type.namespace-qualifier.c++
         2: punctuation.accessor.c++
-    - match: '(?:(::)\s*)?({{identifier}})'
+    - match: '(?:(::))?({{identifier}})'
       captures:
         1: punctuation.accessor.c++
         2: entity.name.type.type-reference.c++
+
+  qualified-type-reference:
+    - match: '({{identifier}})(::)'
+      captures:
+        1: entity.name.type.namespace-qualifier.c++asdlfjk
+        2: punctuation.accessor.c++
+    - match: '(?:(::))({{identifier}})'
+      captures:
+        1: punctuation.accessor.c++
+        2: entity.name.type.type-reference.c++asdflasdkjfasdlfjk
 
   function-specifiers:
     - match: \b(const|final|noexcept|override)\b
@@ -229,7 +239,7 @@ contexts:
 
   statements:
     - include: preprocessor-statements
-    - include: scope:source.c-prime#label
+    - include: scope:source.c#label
     - include: expressions
 
   expressions:
@@ -343,6 +353,7 @@ contexts:
   types:
     - include: unique-types
     - include: types-parens
+    - include: qualified-type-reference
     - include: scope:source.c#types
 
   strings:
@@ -574,7 +585,7 @@ contexts:
             - include: expressions
     - match: '(?=(?!template){{path_lookahead}}\s*{{generic_lookahead}})'
       push:
-        - include: identifiers
+        - include: type-reference
         - match: '<'
           scope: punctuation.section.generic.begin.c++
           set:
