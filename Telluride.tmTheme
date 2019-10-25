@@ -244,7 +244,7 @@
 			<key>name</key>
 			<string>Type name</string>
 			<key>scope</key>
-			<string>storage.type | entity.name.type.type-reference</string>
+			<string>storage.type | support.type | entity.name.type.type-reference</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
