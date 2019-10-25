@@ -1230,7 +1230,7 @@ contexts:
         2: punctuation.section.class.c++
     - match: '^\s*(?=(?:~?\w+|::))'
       push: data-structures-modifier
-    - include: expressions-minus-generic-type
+    #- include: expressions-minus-generic-type
 
   data-structures-modifier:
     - match: '\bfriend\b'
