@@ -31,7 +31,7 @@ variables:
   basic_types: 'asm|__asm__|auto|bool|_Bool|char|_Complex|double|float|_Imaginary|int|long|short|signed|unsigned|void'
   before_tag: 'struct|union|enum\s+class|enum\s+struct|enum|class'
   declspec: '__declspec\(\s*\w+(?:\([^)]+\))?\s*\)'
-  storage_classes: 'static|export|extern|friend|explicit|virtual|register|thread_local'
+  storage_classes: 'static|import|export|extern|friend|explicit|virtual|register|thread_local'
   type_qualifier: 'const|constexpr|mutable|typename|volatile'
   compiler_directive: 'inline|restrict|__restrict__|__restrict'
   visibility_modifiers: 'private|protected|public'
