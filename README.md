@@ -15,14 +15,14 @@ A light color scheme.
 ## Install
 
 ### Windows
-Copy the following files into `%appdata%\Sublime Text 3\packages\user`:
-
-- `C++ Extended.sublime-syntax`
-- `Calypso.tmTheme`
-- `Telluride.tmTheme`
+```
+cd "%appdata%\Sublime Text 3\packages"
+git clone https://github.com/abrauninger/sublime-cpp-extended.git "C++ Extended"
+```
 
 ### Linux
 ```
 cd ~/.config/sublime-text-3/Packages
 git clone https://github.com/abrauninger/sublime-cpp-extended.git "C++ Extended"
 ```
+After installing, you should be able to choose **View** > **Syntax** > **C++ Extended** and **Preferences** > **Color Scheme...** > **Calypso**/**Telluride**.
