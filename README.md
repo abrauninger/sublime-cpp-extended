@@ -20,3 +20,9 @@ Copy the following files into `%appdata%\Sublime Text 3\packages\user`:
 - `C++ Extended.sublime-syntax`
 - `Calypso.tmTheme`
 - `Telluride.tmTheme`
+
+### Linux
+```
+cd ~/.config/sublime-text-3/Packages
+git clone https://github.com/abrauninger/sublime-cpp-extended.git "C++ Extended"
+```
