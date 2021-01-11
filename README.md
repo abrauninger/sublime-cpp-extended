@@ -13,16 +13,11 @@ A dark color scheme.
 A light color scheme.
 
 ## Install
+Within Sublime Text, go to **Preferences** > **Browse Packages...** to view the package directory.
 
-### Windows
+In a terminal/command prompt, change to the package directory and run:
+
 ```
-cd "%appdata%\Sublime Text 3\packages"
 git clone https://github.com/abrauninger/sublime-cpp-extended.git "C++ Extended"
 ```
-
-### Linux
-```
-cd ~/.config/sublime-text-3/Packages
-git clone https://github.com/abrauninger/sublime-cpp-extended.git "C++ Extended"
-```
-After installing, you should be able to choose **View** > **Syntax** > **C++ Extended** and **Preferences** > **Color Scheme...** > **Calypso**/**Telluride**.
+After installing, you should be able to choose **View** > **Syntax** > **C++ Extended** and **Preferences** > **Color Scheme...** > **Calypso** or **Telluride**.
